@@ -1,0 +1,11 @@
+ub_customer
+ub_service
+ub_contract
+ub_department
+ub_job
+ub_employee
+ub_doctype
+ub_accguide
+ub_income
+ub_costcenter
+ub_je

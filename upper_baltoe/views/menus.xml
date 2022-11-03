@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <menuitem id="upper_baltoe_root" name="Accounting" sequence="1"/>
+        <menuitem id="upper_baltoe_root" name="Accounting"/>
+        <menuitem id="ub_customer_menu" name="Customers" parent="upper_baltoe_root" action="ub_customer_action"/>
+        <menuitem id="ub_contract_menu" name="Contracts" parent="upper_baltoe_root" action="ub_contract_action"/>
+        <menuitem id="ub_employee_menu" name="Employees" parent="upper_baltoe_root" action="ub_employee_action"/>
+        <menuitem id="ub_income_menu" name="Income" parent="upper_baltoe_root" action="ub_income_action"/>
+        <menuitem id="ub_je_menu" name="JE" parent="upper_baltoe_root" action="ub_je_action"/>
 
-        <menuitem id="ub_customer_categ" name="Customers" parent="upper_baltoe_root" action="ub_customer_action"
-                  sequence="1"/>
-        <menuitem id="ub_service_categ" name="Services" parent="upper_baltoe_root" action="ub_service_action"
-                  sequence="1"/>
-        <menuitem id="ub_contract_categ" name="Contracts" parent="upper_baltoe_root" action="ub_contract_action"
-                  sequence="1"/>
-        <menuitem id="ub_department_categ" name="Departments" parent="upper_baltoe_root" action="ub_department_action"
-                  sequence="1"/>
-        <menuitem id="ub_job_categ" name="Jobs" parent="upper_baltoe_root" action="ub_job_action" sequence="1"/>
-        <menuitem id="ub_employee_categ" name="Employees" parent="upper_baltoe_root" action="ub_employee_action"
-                  sequence="1"/>
-        <menuitem id="ub_doctype_categ" name="Doctypes" parent="upper_baltoe_root" action="ub_doctype_action"
-                  sequence="1"/>
-        <menuitem id="ub_accguide_categ" name="Accounts guide" parent="upper_baltoe_root" action="ub_accguide_action"
-                  sequence="1"/>
-        <menuitem id="ub_income_categ" name="Income" parent="upper_baltoe_root" action="ub_income_action" sequence="1"/>
-        <menuitem id="ub_costcenter_categ" name="Costcenters" parent="upper_baltoe_root" action="ub_costcenter_action"
-                  sequence="1"/>
-        <menuitem id="ub_je_categ" name="JE" parent="upper_baltoe_root" action="ub_je_action" sequence="1"/>
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="config_categ" name="Configurations" parent="upper_baltoe_root" sequence="100"/>
+        <menuitem id="ub_service_menu" name="Services" parent="config_categ" action="ub_service_action"/>
+        <menuitem id="ub_department_menu" name="Departments" parent="config_categ" action="ub_department_action"/>
+        <menuitem id="ub_job_menu" name="Jobs" parent="config_categ" action="ub_job_action"/>
+        <menuitem id="ub_doctype_menu" name="Doctypes" parent="config_categ" action="ub_doctype_action"/>
+        <menuitem id="ub_accguide_menu" name="Accounts guide" parent="config_categ" action="ub_accguide_action"/>
+        <menuitem id="ub_costcenter_menu" name="Costcenters" parent="config_categ" action="ub_costcenter_action"/>
+        
+
     </data>
 </odoo>

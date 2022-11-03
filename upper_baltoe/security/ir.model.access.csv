@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ub_customer_admin,access_ub_customer_admin,model_ub_customer,base.group_system,1,1,1,1
+access_ub_service_admin,access_ub_service_admin,model_ub_service,base.group_system,1,1,1,1
+access_ub_contract_admin,access_ub_contract_admin,model_ub_contract,base.group_system,1,1,1,1
+access_ub_department_admin,access_ub_department_admin,model_ub_department,base.group_system,1,1,1,1
+access_ub_job_admin,access_ub_job_admin,model_ub_job,base.group_system,1,1,1,1
+access_ub_employee_admin,access_ub_employee_admin,model_ub_employee,base.group_system,1,1,1,1
+access_ub_doctype_admin,access_ub_doctype_admin,model_ub_doctype,base.group_system,1,1,1,1
+access_ub_accguide_admin,access_ub_accguide_admin,model_ub_accguide,base.group_system,1,1,1,1
+access_ub_income_admin,access_ub_income_admin,model_ub_income,base.group_system,1,1,1,1
+access_ub_costcenter_admin,access_ub_costcenter_admin,model_ub_costcenter,base.group_system,1,1,1,1
+access_ub_je_admin,access_ub_je_admin,model_ub_je,base.group_system,1,1,1,1

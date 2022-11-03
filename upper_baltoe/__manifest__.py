@@ -1,5 +1,6 @@
 {
     'name': 'Uppermedic Baltoe',
     'depends': ['base'],
-    'data': ['views/views.xml', 'views/menus.xml', ]
+    'application': True,
+    'data': ['views/views.xml', 'views/menus.xml', 'security/ir.model.access.csv']
 }
