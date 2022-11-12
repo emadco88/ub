@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="upper_baltoe_root" name="UpperMedic"/>
+        <menuitem id="upper_medic_customer_menu" name="Customers" parent="upper_baltoe_root"
+                  action="upper_medic_customer_action"/>
+        <menuitem id="upper_medic_contract_menu" name="Contracts" parent="upper_baltoe_root"
+                  action="upper_medic_contract_action"/>
+        <menuitem id="upper_medic_employee_menu" name="Employees" parent="upper_baltoe_root"
+                  action="upper_medic_employee_action"/>
+        <menuitem id="upper_medic_income_menu" name="Income" parent="upper_baltoe_root"
+                  action="upper_medic_income_action"/>
+        <menuitem id="upper_medic_je_menu" name="JE" parent="upper_baltoe_root" action="upper_medic_je_action"/>
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="config_categ" name="Configurations" parent="upper_baltoe_root" sequence="100"/>
+        <menuitem id="upper_medic_service_menu" name="Services" parent="config_categ"
+                  action="upper_medic_service_action"/>
+        <menuitem id="upper_medic_department_menu" name="Departments" parent="config_categ"
+                  action="upper_medic_department_action"/>
+        <menuitem id="upper_medic_job_menu" name="Jobs" parent="config_categ" action="upper_medic_job_action"/>
+        <menuitem id="upper_medic_doctype_menu" name="Doctypes" parent="config_categ"
+                  action="upper_medic_doctype_action"/>
+        <menuitem id="upper_medic_accguide_menu" name="Accounts guide" parent="config_categ"
+                  action="upper_medic_accguide_action"/>
+        <menuitem id="upper_medic_costcenter_menu" name="Costcenters" parent="config_categ"
+                  action="upper_medic_costcenter_action"/>
+
+
+    </data>
+</odoo>

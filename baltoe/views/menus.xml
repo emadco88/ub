@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="upper_baltoe_root" name="Baltoe"/>
+        <menuitem id="baltoe_customer_menu" name="Customers" parent="upper_baltoe_root"
+                  action="baltoe_customer_action"/>
+        <menuitem id="baltoe_contract_menu" name="Contracts" parent="upper_baltoe_root"
+                  action="baltoe_contract_action"/>
+        <menuitem id="baltoe_employee_menu" name="Employees" parent="upper_baltoe_root"
+                  action="baltoe_employee_action"/>
+        <menuitem id="baltoe_income_menu" name="Income" parent="upper_baltoe_root" action="baltoe_income_action"/>
+        <menuitem id="baltoe_je_menu" name="JE" parent="upper_baltoe_root" action="baltoe_je_action"/>
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="config_categ" name="Configurations" parent="upper_baltoe_root" sequence="100"/>
+        <menuitem id="baltoe_service_menu" name="Services" parent="config_categ" action="baltoe_service_action"/>
+        <menuitem id="baltoe_department_menu" name="Departments" parent="config_categ"
+                  action="baltoe_department_action"/>
+        <menuitem id="baltoe_job_menu" name="Jobs" parent="config_categ" action="baltoe_job_action"/>
+        <menuitem id="baltoe_doctype_menu" name="Doctypes" parent="config_categ" action="baltoe_doctype_action"/>
+        <menuitem id="baltoe_accguide_menu" name="Accounts guide" parent="config_categ"
+                  action="baltoe_accguide_action"/>
+        <menuitem id="baltoe_costcenter_menu" name="Costcenters" parent="config_categ"
+                  action="baltoe_costcenter_action"/>
+
+
+    </data>
+</odoo>

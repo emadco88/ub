@@ -1,0 +1,11 @@
+baltoe_customer
+baltoe_service
+baltoe_contract
+baltoe_department
+baltoe_job
+baltoe_employee
+baltoe_doctype
+baltoe_accguide
+baltoe_income
+baltoe_costcenter
+baltoe_je

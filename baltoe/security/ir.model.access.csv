@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_baltoe_customer_admin,access_baltoe_customer_admin,model_baltoe_customer,base.group_system,1,1,1,1
+access_baltoe_service_admin,access_baltoe_service_admin,model_baltoe_service,base.group_system,1,1,1,1
+access_baltoe_contract_admin,access_baltoe_contract_admin,model_baltoe_contract,base.group_system,1,1,1,1
+access_baltoe_department_admin,access_baltoe_department_admin,model_baltoe_department,base.group_system,1,1,1,1
+access_baltoe_job_admin,access_baltoe_job_admin,model_baltoe_job,base.group_system,1,1,1,1
+access_baltoe_employee_admin,access_baltoe_employee_admin,model_baltoe_employee,base.group_system,1,1,1,1
+access_baltoe_doctype_admin,access_baltoe_doctype_admin,model_baltoe_doctype,base.group_system,1,1,1,1
+access_baltoe_accguide_admin,access_baltoe_accguide_admin,model_baltoe_accguide,base.group_system,1,1,1,1
+access_baltoe_income_admin,access_baltoe_income_admin,model_baltoe_income,base.group_system,1,1,1,1
+access_baltoe_costcenter_admin,access_baltoe_costcenter_admin,model_baltoe_costcenter,base.group_system,1,1,1,1
+access_baltoe_je_admin,access_baltoe_je_admin,model_baltoe_je,base.group_system,1,1,1,1

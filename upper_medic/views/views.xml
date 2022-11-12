@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="upper_medic_customer_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_customer_view_form</field>
+            <field name="model">upper_medic_customer</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_customer_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="commercial_reg"/>
+                            <field name="tax_no"/>
+                            <field name="nid"/>
+                            <field name="address"/>
+                            <field name="description"/>
+                            <field name="first_deal_date"/>
+                            <field name="company"/>
+                            <field name="eval"/>
+                            <field name="att_files"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_customer_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_customer_view_tree</field>
+            <field name="model">upper_medic_customer</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_customer_tree">
+                    <field name="name"/>
+                    <field name="commercial_reg"/>
+                    <field name="tax_no"/>
+                    <field name="nid"/>
+                    <field name="address"/>
+                    <field name="description"/>
+                    <field name="first_deal_date"/>
+                    <field name="company"/>
+                    <field name="eval"/>
+                    <field name="att_files"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_customer_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_customer</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_customer</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--oooooooooooooooo-->
+        <record id="upper_medic_service_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_service_view_form</field>
+            <field name="model">upper_medic_service</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_service_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="service_type"/>
+                            <field name="cost"/>
+                            <field name="price"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_service_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_service_view_tree</field>
+            <field name="model">upper_medic_service</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_service_tree">
+                    <field name="name"/>
+                    <field name="service_type"/>
+                    <field name="cost"/>
+                    <field name="price"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_service_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_service</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_service</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--        ii-->
+        <record id="upper_medic_contract_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_contract_view_form</field>
+            <field name="model">upper_medic_contract</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_contract_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="company"/>
+                            <field name="customer_id"/>
+                            <field name="contract_type"/>
+                            <field name="service_id"/>
+                            <field name="estimated_cost"/>
+                            <field name="total_price"/>
+                            <field name="downpayment"/>
+                            <field name="installment"/>
+                            <field name="periodicity"/>
+                            <field name="start"/>
+                            <field name="end"/>
+                            <field name="creator_id"/>
+                            <field name="att_files"/>
+                            <field name="status"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_contract_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_contract_view_tree</field>
+            <field name="model">upper_medic_contract</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_contract_tree">
+                    <field name="name"/>
+                    <field name="company"/>
+                    <field name="customer_id"/>
+                    <field name="contract_type"/>
+                    <field name="service_id"/>
+                    <field name="estimated_cost"/>
+                    <field name="total_price"/>
+                    <field name="downpayment"/>
+                    <field name="installment"/>
+                    <field name="periodicity"/>
+                    <field name="start"/>
+                    <field name="end"/>
+                    <field name="creator_id"/>
+                    <field name="att_files"/>
+                    <field name="status"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_contract_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_contract</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--iiii-->
+
+        <record id="upper_medic_department_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_department_view_form</field>
+            <field name="model">upper_medic_department</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_department_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_department_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_department_view_tree</field>
+            <field name="model">upper_medic_department</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_department_tree">
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_department_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_department</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_department</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--iiii-->
+        <record id="upper_medic_job_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_job_view_form</field>
+            <field name="model">upper_medic_job</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_job_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_job_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_job_view_tree</field>
+            <field name="model">upper_medic_job</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_job_tree">
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_job_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_job</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_job</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--iiiiii-->
+        <record id="upper_medic_employee_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_employee_view_form</field>
+            <field name="model">upper_medic_employee</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_employee_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="user_id"/>
+                            <field name="birthdate"/>
+                            <field name="qualification"/>
+                            <field name="job_id"/>
+                            <field name="department_id"/>
+                            <field name="company"/>
+                            <field name="working_type"/>
+                            <field name="hour_price"/>
+                            <field name="hiring_date"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_employee_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_employee_view_tree</field>
+            <field name="model">upper_medic_employee</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_employee_tree">
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="birthdate"/>
+                    <field name="qualification"/>
+                    <field name="job_id"/>
+                    <field name="department_id"/>
+                    <field name="company"/>
+                    <field name="working_type"/>
+                    <field name="hour_price"/>
+                    <field name="hiring_date"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_employee_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_employee</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_employee</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--        ooooo-->
+        <record id="upper_medic_doctype_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_doctype_view_form</field>
+            <field name="model">upper_medic_doctype</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_doctype_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_doctype_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_doctype_view_tree</field>
+            <field name="model">upper_medic_doctype</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_doctype_tree">
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_doctype_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_doctype</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_doctype</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--ooooooo-->
+
+        <record id="upper_medic_accguide_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_accguide_view_form</field>
+            <field name="model">upper_medic_accguide</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_accguide_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="is_company_account"/>
+                            <field name="has_costcenter"/>
+                            <field name="required_costcenter"/>
+                            <field name="parent_id"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_accguide_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_accguide_view_tree</field>
+            <field name="model">upper_medic_accguide</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_accguide_tree">
+                    <field name="name"/>
+                    <field name="is_company_account"/>
+                    <field name="has_costcenter"/>
+                    <field name="required_costcenter"/>
+                    <field name="parent_id"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_accguide_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_accguide</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_accguide</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--ooooooo-->
+        <record id="upper_medic_income_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_income_view_form</field>
+            <field name="model">upper_medic_income</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_income_form">
+                    <sheet>
+                        <group>
+                            <field name="creation_date"/>
+                            <field name="due_date"/>
+                            <field name="contract_id"/>
+                            <field name="customer_id"/>
+                            <field name="service_id"/>
+                            <field name="creator_id"/>
+                            <field name="settlement_status"/>
+                            <field name="settlement_date"/>
+                            <field name="collected_value"/>
+                            <field name="bill_value"/>
+                            <field name="attach"/>
+                            <field name="company_account_id"/>
+                            <field name="doctype"/>
+                            <field name="company"/>
+                            <field name="active"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_income_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_income_view_tree</field>
+            <field name="model">upper_medic_income</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_income_tree">
+                    <field name="creation_date"/>
+                    <field name="due_date"/>
+                    <field name="contract_id"/>
+                    <field name="customer_id"/>
+                    <field name="service_id"/>
+                    <field name="creator_id"/>
+                    <field name="settlement_status"/>
+                    <field name="settlement_date"/>
+                    <field name="collected_value"/>
+                    <field name="bill_value"/>
+                    <field name="attach"/>
+                    <field name="company_account_id"/>
+                    <field name="doctype"/>
+                    <field name="company"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_income_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_income</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_income</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--ooooooo-->
+        <record id="upper_medic_costcenter_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_costcenter_view_form</field>
+            <field name="model">upper_medic_costcenter</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_costcenter_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="nick_name"/>
+                            <field name="id_no"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_costcenter_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_costcenter_view_tree</field>
+            <field name="model">upper_medic_costcenter</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_costcenter_tree">
+                    <field name="name"/>
+                    <field name="nick_name"/>
+                    <field name="id_no"/>
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_costcenter_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_costcenter</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_costcenter</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--oooooooooooooooo-->
+        <record id="upper_medic_je_view_form" model="ir.ui.view">
+            <field name="name">upper_medic_je_view_form</field>
+            <field name="model">upper_medic_je</field>
+            <field name="arch" type="xml">
+                <form string="upper_medic_je_form">
+                    <sheet>
+                        <group>
+                            <field name="explain"/>
+                            <field name="out_value"/>
+                            <field name="in_value"/>
+                            <field name="costcenter_id"/>
+                            <field name="creation_date"/>
+                            <field name="due_date"/>
+                            <field name="contract_id"/>
+                            <field name="customer_id"/>
+                            <field name="service_id"/>
+                            <field name="creator_id"/>
+                            <field name="company"/>
+                            <field name="doctype"/>
+                            <field name="company_account_id"/>
+                            <field name="on_account"/>
+                            <field name="att_files"/>
+                            <field name="active"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="upper_medic_je_view_tree" model="ir.ui.view">
+            <field name="name">upper_medic_je_view_tree</field>
+            <field name="model">upper_medic_je</field>
+            <field name="arch" type="xml">
+                <tree string="upper_medic_je_tree">
+                    <field name="explain"/>
+                    <field name="out_value"/>
+                    <field name="in_value"/>
+                    <field name="costcenter_id"/>
+                    <field name="creation_date"/>
+                    <field name="due_date"/>
+                    <field name="contract_id"/>
+                    <field name="customer_id"/>
+                    <field name="service_id"/>
+                    <field name="creator_id"/>
+                    <field name="company"/>
+                    <field name="doctype"/>
+                    <field name="company_account_id"/>
+                    <field name="on_account"/>
+                    <field name="att_files"/>
+                    <field name="active"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="upper_medic_je_action" model="ir.actions.act_window">
+            <field name="name">upper_medic_je</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">upper_medic_je</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+
+
+</odoo>

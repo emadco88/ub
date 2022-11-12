@@ -1,0 +1,11 @@
+upper_medic_customer
+upper_medic_service
+upper_medic_contract
+upper_medic_department
+upper_medic_job
+upper_medic_employee
+upper_medic_doctype
+upper_medic_accguide
+upper_medic_income
+upper_medic_costcenter
+upper_medic_je
